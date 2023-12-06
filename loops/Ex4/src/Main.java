@@ -15,6 +15,6 @@ public class Main {
 
         System.out.printf("O país A terá a população de: %.0f %n", countryA);
         System.out.printf("O país B terá a população de: %.0f %n", countryB);
-        System.out.println("País A ultrapassará ou igualará o país b em " + count + " anos");
+        System.out.println("País A ultrapassará ou igualará o país B em " + count + " anos");
     }
 }
