@@ -10,7 +10,7 @@ public class Main {
         int factorial = scan.nextInt();
         int fact = factorial;
 
-        int predecessor = 1;
+        int predecessor;
         int result = 1;
 
         for (; fact >= 1; fact--) {
