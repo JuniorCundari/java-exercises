@@ -14,7 +14,7 @@ public class Main {
         if (number <= 1) {
             isPrime = false; // 0 e 1 não são primos
         } else {
-            for (int i = 2; i <= number; i++) {
+            for (int i = 2; i <= number / 2; i++) {
                 if (number % i == 0) {
                     isPrime = false; // Encontrou um divisor, não é primo
                     dividers.append(i).append(" "); // Adiciona o divisor à lista
