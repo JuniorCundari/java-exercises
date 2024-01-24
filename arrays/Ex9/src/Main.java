@@ -12,13 +12,13 @@ public class Main {
         }
 
         System.out.print("\nVetor B: ");
-        for (int i = 0; i < A.length; i++) {
+        for (int i = 0; i < B.length; i++) {
             B[i] = i + 2;
             System.out.print(B[i] + "  ");
         }
 
         System.out.print("\nVetor C: ");
-        for (int i = 0; i < A.length; i++) {
+        for (int i = 0; i < C.length; i++) {
             C[i] = (float) A[i] / B[i];
             System.out.print(C[i] + "  ");
         }

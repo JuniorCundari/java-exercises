@@ -19,7 +19,7 @@ public class Main {
         }
 
         System.out.print("\nVetor B: ");
-        for (int i = 0; i < A.length; i++) {
+        for (int i = 0; i < B.length; i++) {
             B[i] = A[i] * 2;
             System.out.print(B[i] + " ");
         }
