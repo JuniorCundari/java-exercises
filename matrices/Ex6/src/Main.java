@@ -25,7 +25,7 @@ public class Main {
 
             while (!validChoice) {
                 System.out.print("Escolha entre 'O' ou 'X': ");
-                char choice = scan.next().charAt(0);
+                char choice = scan.next().toUpperCase().charAt(0);
                 System.out.println("-----------------");
 
                 if (choice == 'O' || choice == 'X') {
