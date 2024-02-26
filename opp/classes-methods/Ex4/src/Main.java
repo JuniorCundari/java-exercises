@@ -1,8 +1,6 @@
-package com.junior.ex4;
-
 import java.util.Scanner;
 
-public class TestNoughtsCrosses {
+public class Main {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -10,8 +8,8 @@ public class TestNoughtsCrosses {
         NoughtsCrosses noughtsCrosses = new NoughtsCrosses();
 
         do {
-            noughtsCrosses.setMatches(noughtsCrosses.getMatches()); // Incrementa o contador de partidas
-            System.out.println("Partida #" + noughtsCrosses.getMatches());
+            noughtsCrosses.matches++; // Incrementa o contador de partidas
+            System.out.println("Partida #" + noughtsCrosses.matches);
 
             char player1 = ' ';
             char player2 = ' ';
@@ -82,15 +80,17 @@ public class TestNoughtsCrosses {
                     // verifica o ganhador
                     if (noughtsCrosses.checkWinner(player1)) {
                         won = true;
-                        noughtsCrosses.setWinsPlayer1(noughtsCrosses.getWinsPlayer1());
+                        noughtsCrosses.winsPlayer1++;
+                        noughtsCrosses.lossPlayer1 = noughtsCrosses.matches - noughtsCrosses.winsPlayer1;
                         System.out.println("Jogador 1 venceu!!!");
                     } else if (noughtsCrosses.checkWinner(player2)) {
                         won = true;
-                        noughtsCrosses.setWinsPlayer2(noughtsCrosses.getWinsPlayer2());
+                        noughtsCrosses.winsPlayer2++;
+                        noughtsCrosses.lossPlayer2 = noughtsCrosses.matches - noughtsCrosses.winsPlayer2;
                         System.out.println("Jogador 2 venceu!!!");
-                    } else if (noughtsCrosses.getRound() > 9) {
+                    } else if (noughtsCrosses.round > 9) {
                         won = true;
-                        noughtsCrosses.setTied(noughtsCrosses.getTied());
+                        noughtsCrosses.tied++;
                         System.out.println("Não temos vencedor!!!");
                     }
                 }
