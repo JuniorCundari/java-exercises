@@ -112,7 +112,7 @@ public class Main {
                             (board[0][2] == 'X' && board[1][1] == 'X' && board[2][0] == 'X')) {
                         won = true;
                         winsPlayer1++;
-                        lossPlayer1 = matches - winsPlayer1;
+                        lossPlayer1 = winsPlayer1;
                         System.out.println("Jogador 1 venceu!!!");
                     } else if ((board[0][0] == 'O' && board[0][1] == 'O' && board[0][2] == 'O') ||
                             (board[1][0] == 'O' && board[1][1] == 'O' && board[1][2] == 'O') ||
@@ -124,7 +124,7 @@ public class Main {
                             (board[0][2] == 'O' && board[1][1] == 'O' && board[2][0] == 'O')) {
                         won = true;
                         winsPlayer2++;
-                        lossPlayer2 = matches - winsPlayer2;
+                        lossPlayer2 = winsPlayer2;
                         System.out.println("Jogador 2 venceu!!!");
                     } else if (round > 9) {
                         won = true;
