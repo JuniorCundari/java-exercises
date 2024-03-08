@@ -46,7 +46,7 @@ public class TestCourse {
         int numberGrades = scan.nextInt();
 
         while (course.isValidNumber(numberGrades)) {
-            System.out.print("Informe o número de notas: ");
+            System.out.print("Informe o número de notas por aluno: ");
             numberGrades = scan.nextInt();
         }
 
