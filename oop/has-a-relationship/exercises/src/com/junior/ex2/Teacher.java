@@ -28,4 +28,8 @@ public class Teacher {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getInfo() {
+        return "Professor: " + name;
+    }
 }

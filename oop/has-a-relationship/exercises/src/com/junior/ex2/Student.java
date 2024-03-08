@@ -28,4 +28,38 @@ public class Student {
     public void setGrades(double[] grades) {
         this.grades = grades;
     }
+
+    public String getInfo() {
+        String info = "Nome aluno: " + name + " - ";
+        info += "Matrcula: " +  registration + " - ";
+        info += "Notas: ";
+
+        double sum = 0;
+
+        for (double grade : grades) {
+            sum += grade;
+            info += grade + " | ";
+        }
+
+        double average = sum / grades.length;
+        info += "\n" + "Média: " + average + " - ";
+
+        if (average >= 7) {
+            info += "Aprovado";
+        } else {
+            info += "Reprovado";
+        }
+
+        return info;
+    }
+
+    public double getAverage() {
+        double sum = 0;
+
+        for (double grade : grades) {
+            sum += grade;
+        }
+
+        return sum / grades.length;
+    }
 }
